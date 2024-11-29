@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Шапка сайта</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #1e1e1e;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333;
+        }
+        .header a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div>
+        <a href="/home">Главная</a>
+        <a href="/dialogs">Диалоги</a>
+        <a href="/news">Новости</a>
+    </div>
+    <div>
+        <a href="/support">Поддержка</a>
+        <a href="/logout">Выйти</a>
+    </div>
+</div>
+</body>
+</html>

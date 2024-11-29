@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Диалоги</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .dialogs-container {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            text-align: center;
+        }
+        .dialogs-container h1 {
+            margin-bottom: 20px;
+        }
+        .dialogs-container p {
+            margin-top: 20px;
+        }
+        .dialogs-container a {
+            color: #1976d2;
+            text-decoration: none;
+        }
+        .dialogs-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div th:replace="header :: header"></div>
+<div class="dialogs-container">
+    <h1>Диалоги</h1>
+    <p>Здесь будут отображаться ваши диалоги.</p>
+</div>
+</body>
+</html>

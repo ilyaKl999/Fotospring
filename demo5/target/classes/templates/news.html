@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Новости</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .news-container {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            text-align: center;
+        }
+        .news-container h1 {
+            margin-bottom: 20px;
+        }
+        .news-container p {
+            margin-top: 20px;
+        }
+        .news-container a {
+            color: #1976d2;
+            text-decoration: none;
+        }
+        .news-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div th:replace="header :: header"></div>
+<div class="news-container">
+    <h1>Новости</h1>
+    <p>Здесь будут отображаться новости.</p>
+</div>
+</body>
+</html>
